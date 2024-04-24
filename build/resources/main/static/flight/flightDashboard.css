@@ -1,0 +1,15 @@
+.buttons-container {
+    text-align: center;
+
+}
+h1 {
+    font-size: 45px;
+}
+
+.dashboard {
+    border: 2px solid black;
+    display: inline-block;
+    align-items: center;
+    padding: 5px;
+    font-size: 30px;
+}

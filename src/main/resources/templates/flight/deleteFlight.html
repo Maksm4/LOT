@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete Flight</title>
+    <link rel="stylesheet" type="text/css" href="/flight/deleteFlight.css">
+</head>
+<body>
+<div class="form-container">
+    <div class="form-div">
+        <h1> Enter Id of flight you want to delete</h1>
+        <form action="/flights/delete" method="post">
+            <label for="id"> Flight ID</label>
+            <input type="text" id="id" name="id">
+            <br>
+            <button type="submit">Delete Flight</button>
+        </form>
+        <br>
+        <a href="/flights" class="return-button">Return to Dashboard</a>
+    </div>
+</div>
+</body>
+</html>

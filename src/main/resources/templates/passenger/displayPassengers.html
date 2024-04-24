@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/passenger/displayPassengers.css" >
+
+</head>
+<body>
+<div class="passengerList-div">
+    <div class="table-div">
+    <h1> List Of Passengers</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>PhoneNumber</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="passenger : ${passengersList}">
+                <td th:text="${passenger.pesel}"></td>
+                <td th:text="${passenger.name}"></td>
+                <td th:text="${passenger.surname}"></td>
+                <td th:text="${passenger.telephone_number}"></td>
+            </tr>
+        </tbody>
+    </table>
+        <br>
+        <a href="/passengers" class="return-button">Return to Dashboard</a>
+    </div>
+</div>
+</body>
+</html>

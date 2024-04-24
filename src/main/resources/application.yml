@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: LOT_database
+  h2:
+    console:
+      path: /LOT-database
+  datasource:
+    url: jdbc:h2:mem:LOT
+    username: admin
+    password: admin
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    defer-datasource-initialization: true
+  sql:
+    init:
+      data-locations: classpath:Data-sql/Passenger.sql, classpath:Data-sql/Flight.sql, classpath:Data-sql/Passenger_Flight.sql
+
+  mvc:
+    path match:
+      matching-strategy: ant_path_matcher

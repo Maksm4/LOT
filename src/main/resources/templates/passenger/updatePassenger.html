@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Passenger</title>
+    <link rel="stylesheet" type="text/css" href="/passenger/updatePassenger.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-div">
+            <h1>Update Passenger</h1>
+            <h1>Provide Passengers ID that you want to update:</h1>
+            <form action="/passengers/update" method="post">
+                <label for="id">Passenger ID(required):</label>
+                <input type="text" id="id" name="id"  value="" required>
+                <br>
+                <label for="name">Passenger Name:</label>
+                <input type="text" id="name" name="name"  value="">
+                <br>
+                <label for="surname">Passenger Surname:</label>
+                <input type="text" id="surname" name="surname"  value="">
+                <br>
+                <label for="telephone">Telephone Number:</label>
+                <input type="text" id="telephone" name="telephone_number" value="">
+                <br>
+                <button type="submit">Update Passenger</button>
+            </form>
+            <br>
+            <a th:href="@{/passengers/displayAll}" class="button" id="read">Show Passengers</a>
+        </div>
+    </div>
+</body>
+</html>

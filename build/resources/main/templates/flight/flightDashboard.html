@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Flights</title>
+    <link rel="stylesheet" type="text/css" href="/flight/flightDashboard.css">
+
+</head>
+<body>
+<div class="buttons-container">
+    <h1>Flights Dashboard</h1>
+    <div class="dashboard">
+        <div class="buttons">
+            <a th:href="@{/flights/create}" class="button" id="create">Add Flight</a>
+            <br>
+            <a th:href="@{/flights/delete}" class="button" id="delete">Delete Flight</a>
+            <br>
+            <a th:href="@{/flights/update}" class="button" id="update">Update Flight</a>
+            <br>
+            <a th:href="@{/flights/filter}" class="button" id="read">Show Flights</a>
+            <br>
+            <a th:href="@{/flights/passToFlight}" class="button" id="addPassenger">Add passenger to Flight</a>
+            <br>
+            <a th:href="@{/flights/delPassFromFlight}" class="button" id="delPassenger">delete passenger from Flight</a>
+            <br>
+            <a href="/" class="return-button">Return to Main Dashboard</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

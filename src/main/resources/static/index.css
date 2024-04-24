@@ -1,0 +1,8 @@
+.buttons-container {
+    text-align: center;
+}
+.main-dashboard {
+    display: inline-block;
+    align-items: center;
+    padding: 5px;
+}

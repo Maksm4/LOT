@@ -1,0 +1,13 @@
+.form-container {
+    text-align: center;
+}
+
+.form-div {
+    display: inline-block;
+    align-items: center;
+    padding: 5px;
+}
+
+button {
+    margin-top: 10px;
+}

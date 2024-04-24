@@ -1,0 +1,15 @@
+form {
+    border: 2px solid black;
+    display: inline-block;
+    align-items: center;
+    padding: 5px;
+}
+
+.form-container {
+    text-align: center;
+}
+
+button {
+    margin-top: 5px;
+    padding: 5px;
+}

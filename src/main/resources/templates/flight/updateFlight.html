@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Flight</title>
+    <link rel="stylesheet" type="text/css" href="/flight/updateFlight.css">
+</head>
+<body>
+<div class="form-container">
+    <div class="form-div">
+        <h1>Update Flight</h1>
+        <h1>Provide Flight ID that you want to update:</h1>
+        <form action="/flights/update" method="post">
+            <label for="id"> ID(required):</label>
+            <input type="text" id="id" name="id" required>
+            <br>
+            <label for="arrival_airport"> Arrival Airport:</label>
+            <input type="text" id="arrival_airport" name="arrivalAirport">
+            <br>
+            <label for="departure_airport"> Departure Airport:</label>
+            <input type="text" id="departure_airport" name="departureAirport">
+            <br>
+            <label for="date_of_flight"> date of departure:</label>
+            <input type="date" id="date_of_flight" name="departureDate">
+            <br>
+            <label for="available_seats"> available seats:</label>
+            <input type="number" id="available_seats" name="availableSeats">
+            <br>
+            <button type="submit">Update Flight</button>
+        </form>
+        <br>
+        <a href="/flights" class="return-button">Return to Dashboard</a>
+    </div>
+</div>
+</body>
+</html>

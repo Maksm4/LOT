@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Flights</title>
+    <link rel="stylesheet" type="text/css" href="/index.css">
+</head>
+<body>
+<div class="buttons-container">
+    <div class="main-dashboard">
+        <h1>Main Dashboard</h1>
+        <div class="buttons">
+            <a th:href="@{/flights}" class="button" id="flight">Manage Flights</a>
+            <br>
+            <a th:href="@{/passengers}" class="button" id="passenger">Manage Passengers</a>
+            <br>
+        </div>
+    </div>
+</div>
+</body>
+</html>

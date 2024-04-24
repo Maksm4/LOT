@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Passenger to Flight</title>
+    <link rel="stylesheet" type="text/css" href="/flight/addPassengerToFlight.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-div">
+            <h1>Add Passenger to Flight:</h1>
+            <form action="/flights/passToFlight" method="post">
+                <label for="passengerId">Passenger ID:</label>
+                <input type="text" id="passengerId" name="passengerId" required>
+                <br>
+                <label for="flightId">Flight ID:</label>
+                <input type="text" id="flightId" name="flightId" required>
+                <br>
+                <button type="submit">Add Passenger to Flight</button>
+            </form>
+            <br>
+            <a href="/flights" class="return-button">Return to Dashboard</a>
+        </div>
+    </div>
+</body>
+</html>

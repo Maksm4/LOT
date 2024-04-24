@@ -1,0 +1,13 @@
+.passengerList-div {
+    text-align: center;
+}
+
+.table-div {
+    display: inline-block;
+    align-items: center;
+    padding: 5px;
+}
+
+table, td, th {
+    border: 2px solid black;
+}

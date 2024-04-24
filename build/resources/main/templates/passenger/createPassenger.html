@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/passenger/createPassenger.css">
+</head>
+<body>
+<div class="form-container">
+<div class="form-div">
+    <h1> Enter new Passenger data</h1>
+    <form action="/passengers/create" method="post" th:object="${passenger}">
+        <label for="name"> Passenger name:</label>
+        <input type="text" id="name" name="name" th:field="*{name}">
+        <br>
+        <label for="surname"> Passenger surname:</label>
+        <input type="text" id="surname" name="surname" th:field="*{surname}">
+        <br>
+        <label for="telephone"> Telephone number:</label>
+        <input type="text" id="telephone" name="telephone_number" th:field="*{telephone_number}">
+        <br>
+        <button type="submit">create passenger</button>
+    </form>
+    <br>
+    <a href="/passengers" class="return-button">Return to Dashboard</a>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Flight</title>
+    <link rel="stylesheet" type="text/css" href="/flight/createFlight.css">
+
+</head>
+<body>
+<div class="form-container">
+    <div class="form-div">
+        <h1> Enter new Flight data</h1>
+        <form action="/flights/create" method="post" th:object="${flight}">
+            <label for="departure_airport"> Departure Airport::</label>
+            <input type="text" id="departure_airport" name="departure_airport" th:field="*{departure_airport}">
+            <br>
+            <label for="arrival_airport"> Arrival Airport:</label>
+            <input type="text" id="arrival_airport" name="arrival_airport" th:field="*{arrival_airport}">
+            <br>
+            <label for="date_of_flight">date of flight:</label>
+            <input type="date" id="date_of_flight" name="date_of_flight" th:field="*{departureDate}">
+            <br>
+            <label for="available_seats"> Available seats:</label>
+            <input type="text" id="available_seats" name="available_seats" th:field="*{available_seats}">
+            <br>
+            <button type="submit">create Flight</button>
+        </form>
+        <br>
+        <a href="/flights" class="return-button">Return to Dashboard</a>
+    </div>
+</div>
+</body>
+</html>

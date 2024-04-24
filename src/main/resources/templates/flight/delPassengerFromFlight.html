@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete Passenger from Flight</title>
+<!--    <link rel="stylesheet" type="text/css" href="/flight/deletePassengerFromFlight.css">-->
+</head>
+<body>
+<div class="form-container">
+    <div class="form-div">
+        <h1>Delete Passenger from Flight:</h1>
+        <form action="/flights/delPassFromFlight" method="post">
+            <label for="passengerId">Passenger ID:</label>
+            <input type="text" id="passengerId" name="passengerId" required>
+            <br>
+            <label for="flightId">Flight ID:</label>
+            <input type="text" id="flightId" name="flightId" required>
+            <br>
+            <button type="submit">Delete Passenger From Flight</button>
+        </form>
+        <br>
+        <a href="/flights" class="return-button">Return to Dashboard</a>
+    </div>
+</div>
+</body>
+</html>

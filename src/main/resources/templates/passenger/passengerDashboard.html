@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Passenger</title>
+    <link rel="stylesheet" type="text/css" href="/passenger/passengerDashboard.css" >
+</head>
+<body>
+<div class="buttons-container">
+<div class="dashboard">
+    <h1>Passenger Dashboard</h1>
+    <div class="buttons">
+        <a th:href="@{/passengers/create}" class="button" id="create">Add Passenger</a>
+        <br>
+        <a th:href="@{/passengers/delete}" class="button" id="delete">Delete Passenger</a>
+        <br>
+        <a th:href="@{/passengers/update}" class="button" id="update">Update Passenger</a>
+        <br>
+        <a th:href="@{/passengers/displayAll}" class="button" id="read">Show all Passengers</a>
+        <br>
+        <a href="/" class="return-button">Return to Main Dashboard</a>
+    </div>
+</div>
+</div>
+</body>
+</html>

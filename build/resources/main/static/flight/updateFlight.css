@@ -1,0 +1,15 @@
+.form-container {
+    text-align: center;
+}
+.form-div {
+    display: inline-block;
+    align-items: center;
+    padding: 5px;
+}
+button {
+    margin: 5px;
+}
+
+input {
+    margin: 5px;
+}

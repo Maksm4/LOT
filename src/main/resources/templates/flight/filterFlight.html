@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Filter Flights</title>
+    <link rel="stylesheet" type="text/css" href="/flight/filterFlight.css" >
+</head>
+<body>
+<div class="container-div">
+<div class="form-div">
+    <h1>Filter Flights</h1>
+    <form action="/flights/filter" method="get">
+        <label for="departureAirport">Departure Airport:</label>
+        <input type="text" id="departureAirport" name="departureAirport">
+        <br>
+        <label for="arrivalAirport">Arrival Airport:</label>
+        <input type="text" id="arrivalAirport" name="arrivalAirport">
+        <br>
+        <label for="departureDate">Departure Date:</label>
+        <input type="date" id="departureDate" name="departureDate">
+        <br>
+        <label for="availableSeats">Available Seats:</label>
+        <input type="checkbox" id="availableSeats" name="availableSeats">
+        <br>
+        <br>
+        <button type="submit">Search Flights</button>
+    </form>
+</div>
+
+<div class="table-div">
+    <h2>Filtered Flights</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>FlightNumber</th>
+            <th>DepartureAirport</th>
+            <th>ArrivalAirport</th>
+            <th>DepartureDate</th>
+            <th>AvailableSeats</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="flight : ${flightList}">
+            <td th:text="${flight.flight_number}"></td>
+            <td th:text="${flight.departure_airport}"></td>
+            <td th:text="${flight.arrival_airport}"></td>
+            <td th:text="${flight.departureDate}"></td>
+            <td th:text="${flight.available_seats}"></td>
+        </tr>
+        </tbody>
+    </table>
+    <br>
+    <a href="/flights" class="return-button">Return to Dashboard</a>
+</div>
+</div>
+</body>
+</html>
